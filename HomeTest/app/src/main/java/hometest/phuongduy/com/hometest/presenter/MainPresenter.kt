@@ -19,6 +19,7 @@ class MainPresenter(private val mView: MainContract.View) : MainContract.Present
             mView.setUpKeywordsList(keyWordList)
         }, onLoadKeywordsError = {
             Log.d(TAG, "Keywords loading failed")
+            mView.showLoadingError()
         })
     }
 

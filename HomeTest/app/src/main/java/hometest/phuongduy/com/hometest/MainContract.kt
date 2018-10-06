@@ -6,6 +6,7 @@ interface MainContract {
     interface View {
         fun setPresenter(presenter: Presenter)
         fun setUpKeywordsList(keywordList: List<Keyword>)
+        fun showLoadingError()
     }
 
     interface Presenter {

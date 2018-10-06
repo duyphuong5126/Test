@@ -36,5 +36,23 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_keywords" />
 
+        <TextView
+            android:id="@+id/tv_network_error"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/network_error"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/rv_keywords_list"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="20dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:visibility="gone"/>
+
     </android.support.constraint.ConstraintLayout>
 </layout>

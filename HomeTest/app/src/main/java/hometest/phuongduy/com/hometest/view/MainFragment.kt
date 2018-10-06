@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import hometest.phuongduy.com.hometest.MainContract
 import hometest.phuongduy.com.hometest.adapter.KeywordAdapter
 import hometest.phuongduy.com.hometest.databinding.FragmentMainBinding
@@ -24,6 +25,7 @@ class MainFragment : Fragment(), MainContract.View {
      * Views list
      */
     private lateinit var mRvKeywordList: RecyclerView
+    private lateinit var mTvNetworkError: TextView
 
     private lateinit var mKeywordAdapter: KeywordAdapter
     private lateinit var mKeywordListLayoutManager: LinearLayoutManager
@@ -57,9 +59,17 @@ class MainFragment : Fragment(), MainContract.View {
         mKeywordListLayoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         mRvKeywordList.adapter = mKeywordAdapter
         mRvKeywordList.layoutManager = mKeywordListLayoutManager
+        mRvKeywordList.visibility = View.VISIBLE
+        mTvNetworkError.visibility = View.GONE
+    }
+
+    override fun showLoadingError() {
+        mRvKeywordList.visibility = View.GONE
+        mTvNetworkError.visibility = View.VISIBLE
     }
 
     private fun initViews() {
         mRvKeywordList = mBinding.rvKeywordsList
+        mTvNetworkError = mBinding.tvNetworkError
     }
 }
