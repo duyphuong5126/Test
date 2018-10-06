@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Home Test</string>
+    <string name="keyword_sample">Keyword Sample</string>
+    <string name="hot_keywords">Hot keywords</string>
+</resources>
