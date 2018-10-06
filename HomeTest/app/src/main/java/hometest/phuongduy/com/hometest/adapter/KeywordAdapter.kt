@@ -24,6 +24,7 @@ class KeywordAdapter(private val mKeywordList: List<Keyword>) : RecyclerView.Ada
     private val mColorsList: IntArray = IntArray(mKeywordList.size)
 
     init {
+        // Initialize once and for all
         val random = Random()
         for (index in 0 until mKeywordList.size) {
             mColorsList[index] = SupportUtils.generateColor(

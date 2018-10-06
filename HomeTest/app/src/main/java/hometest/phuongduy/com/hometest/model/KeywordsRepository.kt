@@ -123,7 +123,8 @@ object KeywordsRepository {
     }
 
     private fun stringsToKeywordsList(inputList: List<String>): List<Keyword> {
-        return inputList.map { string -> Keyword
+        return inputList.map { string ->
+            Keyword
             Keyword(string)
         }
     }

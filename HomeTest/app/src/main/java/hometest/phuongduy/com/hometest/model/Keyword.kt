@@ -10,7 +10,8 @@ open class Keyword(@ColumnInfo(name = Constants.KEYWORD_NAME) var mName: String)
         private val TAG: String = Keyword::class.java.simpleName
     }
 
-    @PrimaryKey(autoGenerate = true) @ColumnInfo(name = Constants.KEYWORD_ID)
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = Constants.KEYWORD_ID)
     var id: Int = 0
 
     @Ignore

@@ -4,4 +4,5 @@
     <string name="keyword_sample">Từ khoá mẫu</string>
     <string name="hot_keywords">Từ khoá hot</string>
     <string name="network_error">Đã xảy ra lỗi.\nXin hãy kiểm tra kết nối mạng.</string>
+    <string name="retry">Thử lại</string>
 </resources>
