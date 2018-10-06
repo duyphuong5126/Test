@@ -11,14 +11,17 @@
         <TextView
             android:id="@+id/tv_keyword"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:maxLines="2"
             android:text="@string/keyword_sample"
             android:textSize="18sp"
             android:textColor="@android:color/white"
             android:gravity="center"
             android:background="@drawable/bg_all_corner_radius_sample"
-            android:padding="10dp"/>
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"/>
 
     </android.support.constraint.ConstraintLayout>
 </layout>
