@@ -1,5 +1,5 @@
 # About HomeTest app
-- Used third party library: 
+- Used third party libraries: 
   + Retrofit 2: 2.4.0 (included Gson Converter)
   + OkHttp 3 Logging Interceptor: 3.9.0
   + Kotlin Coroutines: 0.24.0
