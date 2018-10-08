@@ -12,7 +12,7 @@ Start from the center of the string, if
   + If not, using 2 pointers to traverse from the center to the head/tail of the string. The pointer that meets the white space first will replace that white space with the new line character then return the new string.
     + If there is no white space caught by the pointers, return the original string.
   
-- UX of downloading data: when your phone has no Internet connection at first time, app will show Retry button so that use can reload data. That button won't be hidden unless Internet is available and data is downloaded. Once data is downloaded, app will store them in DB so that the next time it can show to user no matter Internet is available or not.
+- UX of downloading data: when the phone has no Internet connection at first time, app will show Retry button so that user can reload data. That button won't be hidden unless Internet is available and data is downloaded. Once data is downloaded, app will store them in DB so that the next time it can show to user no matter Internet is available or not.
     
 - Random colors solution: 
   + Use a drawable resource file that supports rounded corners.
