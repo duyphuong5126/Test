@@ -16,7 +16,7 @@ Start from the center of the string, if
     
 - Random colors solution: 
   + Use a drawable resource file that supports rounded corners.
-  + Generate a random color and applying it on the drawable using setColorFilter method. The RGB values of the color are randomized from 0 to 199.
+  + Generate a random color and apply it on the drawable using setColorFilter method. The RGB values of the color are randomized from 0 to 199.
   + Set the new drawable as the background of the view.
     
 - Supported languages: English and Vietnamese.
